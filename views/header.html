@@ -1,49 +1,78 @@
-<header>
+<div class="brand" ng-click="$state.go('home')"></div>
+<div class="address-bar">
+    <h2 >YES， we did it, and you can, too!</h2>
+    <h2 class="text-center">选择YES，选择通往美加名牌大学的捷径！</h2>
+</div>
+
     <!-- Start: Navigation wrapper -->
-    <div class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-            <div class="container">
-                <a class="brand brand-bootbus" href="index.html"></a>
-                <!-- Below button used for responsive navigation -->
-                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!-- Start: Primary navigation -->
-                <div class="nav-collapse collapse">
-                    <ul class="nav pull-right">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">高级课程<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a ui-sref="advance1">SAT 备考班</a></li>
-                                <li><a ui-sref="advance1">ACT 备考班</a></li>
-                                <li><a ui-sref="advance1">AP 课程</a></li>
-                                <li><a ui-sref="advance1">深度课程</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">基础课程<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a ui-sref="basc1">基础写作班</a></li>
-                                <li><a ui-sref="basc1">数学提高班</a></li>
-                                <li><a ui-sref="basc1">SSAT 备考班</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a ui-sref="about-us">学校简介</a></li>
-                                <li><a ui-sref="contact-us">联系信息</a></li>
-                                <li><a ui-sref="map">地址</a></li>
-                            </ul>
-                        </li>
-                        <li><a ui-sref="faq">FAQ</a></li>
-                        <li><a ui-sref="contact-us">Contact us</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End: Navigation wrapper -->
-</header>
+
+        <navigation menu="menu"></navigation>
+<!--<nav class="navbar navbar-default" role="navigation">-->
+    <!--<div class="container">-->
+        <!--<div class="navbar-header">-->
+            <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">-->
+                <!--<span class="sr-only">Toggle navigation</span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+            <!--</button>-->
+            <!--<a class="navbar-brand" href="index.html">Business Casual</a>-->
+        <!--</div>-->
+
+        <!--&lt;!&ndash; Collect the nav links, forms, and other content for toggling &ndash;&gt;-->
+        <!--<div class="collapse navbar-collapse navbar-ex1-collapse">-->
+            <!--<ul class="nav navbar-nav">-->
+                <!--<li class="dropdown">-->
+                    <!--<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">关于我们<b class="caret"></b></a>-->
+                    <!--<ul class="dropdown-menu">-->
+                        <!--<li><a ui-sref="advance1">中心介绍</a></li>-->
+                        <!--<li><a ui-sref="advance1">师资力量</a></li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+                <!--<li class="dropdown">-->
+                    <!--<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">课程介绍<b class="caret"></b></a>-->
+                    <!--<ul class="dropdown-menu">-->
+                        <!--<li><a ui-sref="advance1">升学课程</a></li>-->
+                        <!--<li><a ui-sref="advance1">AP课程</a></li>-->
+                        <!--<li><a ui-sref="advance1">IB 课程</a></li>-->
+                        <!--<li><a ui-sref="advance1">BC省课程</a></li>-->
+                        <!--<li><a ui-sref="advance1">英语课程</a></li>-->
+                        <!--<li><a ui-sref="advance1">竞赛课程</a></li>-->
+                        <!--<li><a ui-sref="advance1">UBC课程</a></li>-->
+                        <!--<li><a ui-sref="advance1">机器人课程</a></li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+                <!--<li class="dropdown">-->
+                    <!--<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">高级课程<b class="caret"></b></a>-->
+                    <!--<ul class="dropdown-menu">-->
+                        <!--<li><a ui-sref="advance1">SAT 备考班</a></li>-->
+                        <!--<li><a ui-sref="advance1">ACT 备考班</a></li>-->
+                        <!--<li><a ui-sref="advance1">AP 课程</a></li>-->
+                        <!--<li><a ui-sref="advance1">深度课程</a></li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+                <!--<li class="dropdown">-->
+                    <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">基础课程<b class="caret"></b></a>-->
+                    <!--<ul class="dropdown-menu">-->
+                        <!--<li><a ui-sref="basc1">基础写作班</a></li>-->
+                        <!--<li><a ui-sref="basc1">数学提高班</a></li>-->
+                        <!--<li><a ui-sref="basc1">SSAT 备考班</a></li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+                <!--<li class="dropdown">-->
+                    <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>-->
+                    <!--<ul class="dropdown-menu">-->
+                        <!--<li><a ui-sref="about-us">学校简介</a></li>-->
+                        <!--<li><a ui-sref="contact-us">联系信息</a></li>-->
+                        <!--<li><a ui-sref="map">地址</a></li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+                <!--<li><a ui-sref="faq">FAQ</a></li>-->
+                <!--<li><a ui-sref="contact-us">Contact us</a></li>-->
+            <!--</ul>-->
+        <!--</div>-->
+        <!--&lt;!&ndash; /.navbar-collapse &ndash;&gt;-->
+    <!--</div>-->
+    <!--&lt;!&ndash; /.container &ndash;&gt;-->
+<!--</nav>-->
+

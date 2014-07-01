@@ -10,15 +10,24 @@
 
 }
 
-.navbar .brand
-{
-    background: url(../img/logo.png) no-repeat left center;
-    -webkit-background-size: cover; /* For WebKit*/
-    -moz-background-size: cover;    /* Mozilla*/
-    -o-background-size: cover;      /* Opera*/
-    background-size: cover;         /* Generic*/
-    height: 20px;
-    width: 160px;
+/*.navbar .brand*/
+/*{*/
+    /*background: url(../img/logo.png) no-repeat left center;*/
+    /*-webkit-background-size: cover; *//* For WebKit*/
+    /*-moz-background-size: cover;    *//* Mozilla*/
+    /*-o-background-size: cover;      *//* Opera*/
+    /*background-size: cover;         *//* Generic*/
+    /*height: 20px;*/
+    /*width: 200px;*/
+/*}*/
+
+.banner {
+    background: url(../img/banner.jpg) no-repeat center ;
+    -webkit-background-size: contain; /* For WebKit*/
+    -moz-background-size: contain;    /* Mozilla*/
+    -o-background-size: contain;      /* Opera*/
+    background-size: contain;         /* Generic*/
+    height: 70px;
 }
 
 /*.navbar .brand {*/
