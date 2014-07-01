@@ -11,11 +11,11 @@ angular.module('school')
                 children: [
                     {
                         name: "中心介绍",
-                        link: 'advance1'
+                        link: 'basc1'
                     },
                     {
                         name: "师资力量",
-                        link: 'advance1'
+                        link: 'basc1'
                     }]
             },
             {
