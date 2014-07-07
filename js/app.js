@@ -5,7 +5,8 @@
 
 angular.module('school', [
     'ui.router',
-    'ngMap'
+    'ngMap',
+    'ui.bootstrap'
 ])
 
     .run(

@@ -47,7 +47,20 @@ angular.module('school')
                     parent: 'root',
                     views : {
                         'main@': {
-                            templateUrl: 'views/main.html'
+                            templateUrl: 'views/main.html',
+                            controller: 'MainCtrl'
+                        }
+                    }
+
+                })
+                .state("home.news", {
+
+                    url: "news/?id",
+                    views : {
+                        'news': {
+                            templateUrl: function ($stateParams){
+                                return 'views/news/' + $stateParams.id + '.html';
+                            }
                         }
                     }
 

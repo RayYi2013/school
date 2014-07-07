@@ -91,6 +91,18 @@ angular.module('school')
                     }]
             },
             {
+                name: "成功案例",
+                children: [
+                    {
+                        name: "案例 1",
+                        link: 'advance1'
+                    },
+                    {
+                        name: "案例 2",
+                        link: 'advance1'
+                    }]
+            },
+            {
                 name: "联系我们",
                 children: [
                     {
