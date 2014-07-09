@@ -65,6 +65,16 @@ angular.module('school')
                     }
 
                 })
+                .state("overview", {
+
+                    url: "/overview",
+                    parent: 'root',
+                    views : {
+                        'main@': {
+                            templateUrl: 'views/overview.html'
+                        }
+                    }
+                })
                 .state("advance1", {
 
                     url: "/advance1",

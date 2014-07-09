@@ -1,10 +1,10 @@
-<div class="container-fluid">
-    <div class="row-fluid">
-        <div class="span5 ">
+<div class="container-fluid ">
+    <div class="row-fluid equal">
+        <div class="col-md-5 col-xs-5 col-sm-5 mygrid-wrapper-div">
             <accordion close-others="true">
                 <ul class="list-group">
-                    <li ng-repeat="item in list"  ng-class="{active: selected({{$index}}) , 'list-group-item':true}" >
-                        <a ui-sref="home.news({id:{{$index}}})">{{item}}</a>
+                    <li ng-repeat="item in list"  ng-class="{'active': selected({{item.id}}) , 'list-group-item':true}" >
+                        <a ui-sref="home.news({id:{{item.id}}})">{{item.title}}</a>
                     </li>
                 </ul>
                 <!--<accordion-group heading="{{group.title}}" ng-repeat="group in groups">-->
@@ -12,7 +12,7 @@
                 <!--</accordion-group>-->
             </accordion>
         </div>
-        <div class="span7">
+        <div class="col-md-7 col-xs-7 col-sm-7 mygrid-wrapper-div">
             <div ui-view="news">
                 <img src="img/placeholder.jpg" class="thumbnail img-responsive center-block">
             </div>

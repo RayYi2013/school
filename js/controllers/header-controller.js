@@ -11,7 +11,7 @@ angular.module('school')
                 children: [
                     {
                         name: "中心介绍",
-                        link: 'basc1'
+                        link: 'overview'
                     },
                     {
                         name: "师资力量",
