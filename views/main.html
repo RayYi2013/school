@@ -1,10 +1,16 @@
 <div class="container-fluid ">
+    <div class="row">
+        <div class="col-md-5 col-xs-5 col-sm-5 text-center">
+            <h1>新闻</h1>
+        </div>
+    </div>
     <div class="row-fluid equal">
         <div class="col-md-5 col-xs-5 col-sm-5 mygrid-wrapper-div">
             <accordion close-others="true">
                 <ul class="list-group">
-                    <li ng-repeat="item in list"  ng-class="{'active': selected({{item.id}}) , 'list-group-item':true}" >
+                    <li ng-repeat="item in list | orderBy: 'created': true "  ng-class="{'active': selected({{item.id}}) , 'list-group-item':true}" >
                         <a ui-sref="home.news({id:{{item.id}}})">{{item.title}}</a>
+                        <span class="badge">{{item.created | date:'yyyy-MM-dd'}}</span>
                     </li>
                 </ul>
                 <!--<accordion-group heading="{{group.title}}" ng-repeat="group in groups">-->
