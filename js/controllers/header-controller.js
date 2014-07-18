@@ -22,7 +22,7 @@ angular.module('school')
                 name: "课程介绍",
                 children: [
                     {
-                        name: "升学课程",
+                        name: "SAT,ACT课程",
                         link: 'advance1'
                     },
                     {
@@ -47,6 +47,10 @@ angular.module('school')
                     },
                     {
                         name: "机器人课程",
+                        link: 'advance1'
+                    },
+                    {
+                        name: "竞赛课程",
                         link: 'advance1'
                     }]
             },
